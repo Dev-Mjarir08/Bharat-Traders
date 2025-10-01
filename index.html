@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Furnishings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <nav>
+            <a href="#" class="logo">Bharat Traders</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="profile-icon" id="profileIcon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+    <div class="form-popup" id="loginForm">
+        <div class="form-container">
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" id="closeLogin">Close</button>
+            </form>
+            <div class="form-switch">
+                <p>Don't have an account? <a id="showSignup">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-popup" id="signupForm">
+        <div class="form-container">
+            <h2>Sign Up</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="btn">Sign Up</button>
+                <button type="button" class="btn cancel" id="closeSignup">Close</button>
+            </form>
+            <div class="form-switch">
+                <p>Already have an account? <a id="showLogin">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero" id="home">
+        <div class="carousel">
+            <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80');">
+                <div class="slide-content">
+                    <h2>Luxurious Curtains</h2>
+                    <p>Transform your windows with our premium collection of curtains</p>
+                    <a href="#products" class="btn-primary">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');">
+                <div class="slide-content">
+                    <h2>Comfortable Mattresses</h2>
+                    <p>Experience the perfect night's sleep with our premium mattresses</p>
+                    <a href="#products" class="btn-primary">Explore Collection</a>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');">
+                <div class="slide-content">
+                    <h2>Elegant Sofas</h2>
+                    <p>Add style and comfort to your living space with our designer sofas</p>
+                    <a href="#products" class="btn-primary">Discover More</a>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');">
+                <div class="slide-content">
+                    <h2>Stylish Chairs</h2>
+                    <p>Complete your interior with our exclusive chair collection</p>
+                    <a href="#products" class="btn-primary">View Collection</a>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <div class="indicator active" data-slide="0"></div>
+                <div class="indicator" data-slide="1"></div>
+                <div class="indicator" data-slide="2"></div>
+                <div class="indicator" data-slide="3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number" data-count="25">0</span>
+                <span class="stat-text">Years of Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="10000">0</span>
+                <span class="stat-text">Happy Customers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="500">0</span>
+                <span class="stat-text">Products</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="50">0</span>
+                <span class="stat-text">Awards</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>About Us</h2>
+            <p>We are passionate about creating beautiful and comfortable living spaces with our premium furnishing products</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Creating Comfort Since 1995</h3>
+                <p>At Elegant Furnishings, we believe that your home should be a reflection of your personality and a sanctuary of comfort. For over 25 years, we've been dedicated to providing high-quality furnishing solutions that combine style, functionality, and durability.</p>
+                <p>Our team of experienced designers and craftsmen work tirelessly to bring you the latest trends in home furnishing while maintaining the timeless elegance that defines our brand.</p>
+                <p>From luxurious curtains that transform your windows to comfortable mattresses that ensure restful sleep, we have everything you need to create your dream home.</p>
+                <a href="#contact" class="btn-primary">Contact Us</a>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="section-title">
+            <h2>Our Process</h2>
+            <p>How we bring your dream home to life</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Consultation</h3>
+                    <p>We discuss your needs, preferences, and budget to understand your vision.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Design</h3>
+                    <p>Our designers create a customized plan that matches your style and requirements.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Production</h3>
+                    <p>We craft your furniture with precision using high-quality materials and techniques.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Delivery</h3>
+                    <p>We deliver and install your furniture, ensuring everything is perfect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="section-title">
+            <h2>Our Products</h2>
+            <p>Explore our carefully curated collection of premium furnishings</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80" alt="Luxurious Curtains">
+                </div>
+                <div class="product-info">
+                    <h3>Luxurious Curtains</h3>
+                    <p>Premium quality curtains that add elegance to any room</p>
+                    <div class="product-price">$129.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Comfortable Mattresses">
+                </div>
+                <div class="product-info">
+                    <h3>Comfortable Mattresses</h3>
+                    <p>Experience the perfect night's sleep with our premium mattresses</p>
+                    <div class="product-price">$599.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Elegant Sofas">
+                </div>
+                <div class="product-info">
+                    <h3>Elegant Sofas</h3>
+                    <p>Add style and comfort to your living space with our designer sofas</p>
+                    <div class="product-price">$899.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Stylish Chairs">
+                </div>
+                <div class="product-info">
+                    <h3>Stylish Chairs</h3>
+                    <p>Complete your interior with our exclusive chair collection</p>
+                    <div class="product-price">$249.99</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <p>We offer comprehensive solutions to make your home beautiful and comfortable</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-paint-roller"></i>
+                </div>
+                <h3>Interior Design</h3>
+                <p>Professional interior design services to transform your space</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Installation</h3>
+                <p>Expert installation of all our furniture products</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-couch"></i>
+                </div>
+                <h3>Custom Furniture</h3>
+                <p>Custom-made furniture tailored to your specific needs</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Consultation</h3>
+                <p>Free consultation to help you choose the perfect furnishings</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-title">
+            <h2>Our Gallery</h2>
+            <p>Take a look at some of our completed projects</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80" alt="Project 1">
+                <div class="gallery-overlay">
+                    <h3>Modern Living Room</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Project 2">
+                <div class="gallery-overlay">
+                    <h3>Cozy Bedroom</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Project 3">
+                <div class="gallery-overlay">
+                    <h3>Elegant Dining Area</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Project 4">
+                <div class="gallery-overlay">
+                    <h3>Home Office Setup</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-title">
+            <h2>What Our Customers Say</h2>
+            <p>Hear from our satisfied customers about their experience with Elegant Furnishings</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"The quality of the curtains I purchased exceeded my expectations. They transformed my living room completely!"</p>
+                            <p class="testimonial-author">- Sarah Johnson</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"The mattress I bought is the most comfortable one I've ever slept on. Worth every penny!"</p>
+                            <p class="testimonial-author">- Michael Brown</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Their interior design service helped me create my dream home. Professional and creative team!"</p>
+                            <p class="testimonial-author">- Emily Davis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <div class="testimonial-dot active" data-slide="0"></div>
+                <div class="testimonial-dot" data-slide="1"></div>
+                <div class="testimonial-dot" data-slide="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions about our products and services</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How long does delivery take?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Delivery times vary depending on the product and your location. Standard delivery takes 5-7 business days, while custom orders may take 2-4 weeks. We'll provide a specific delivery date when you place your order.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer installation services?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer professional installation services for all our furniture products. Our trained technicians will assemble and install your furniture, ensuring everything is set up correctly and safely.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is your return policy?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer a 30-day return policy for all our products. If you're not completely satisfied with your purchase, you can return it in its original condition for a full refund or exchange.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you provide custom furniture designs?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! We specialize in custom furniture designs. Our design team will work with you to create pieces that perfectly match your style, space, and requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="section-title">
+            <h2>Latest From Our Blog</h2>
+            <p>Stay updated with the latest trends and tips in home furnishing</p>
+        </div>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80" alt="Blog Post 1">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-date">June 15, 2023</span>
+                        <span class="blog-category">Interior Design</span>
+                    </div>
+                    <h3>5 Ways to Transform Your Living Room</h3>
+                    <p>Discover simple yet effective ways to refresh your living space without a complete renovation.</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Blog Post 2">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-date">May 28, 2023</span>
+                        <span class="blog-category">Sleep Health</span>
+                    </div>
+                    <h3>The Importance of a Good Mattress</h3>
+                    <p>Learn how investing in a quality mattress can improve your sleep and overall health.</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Blog Post 3">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-date">April 12, 2023</span>
+                        <span class="blog-category">Furniture Care</span>
+                    </div>
+                    <h3>Maintaining Your Furniture for Longevity</h3>
+                    <p>Essential tips to keep your furniture looking new and extending its lifespan.</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Elegant Furnishings</h3>
+                <p>Creating beautiful and comfortable living spaces since 1995. We offer premium quality furnishing products for your home.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Furniture Street, Design City</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@elegantfurnishings.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Sat: 9AM - 6PM</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates and offers</p>
+                <form>
+                    <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
+                    <button type="submit" class="btn-primary" style="width: 100%;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Elegant Furnishings. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
